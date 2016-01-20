@@ -1,0 +1,11 @@
+<div class="template">
+   <h4>{{model.title}}</h4>
+
+  <p>This is the <code>artists/artist/albums/album</code> template.</p>
+
+  <ul>
+    {{#each model.songs as |song|}}
+      <li>{{song.title}}</li>
+    {{/each}}
+  </ul>
+</div>

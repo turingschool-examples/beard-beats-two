@@ -1,0 +1,15 @@
+<div class="template">
+  <p>This is the <code>artists/artist/albums</code> template.</p>
+
+  <ul>
+  {{#each model.albums as |album|}}
+    <li>
+      {{#link-to 'artists.artist.albums.album' album}}
+        {{album.title}} ({{album.year}})
+      {{/link-to}}
+    </li>
+  {{/each}}
+  </ul>
+
+  {{outlet}}
+</div>
